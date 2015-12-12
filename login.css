@@ -1,0 +1,41 @@
+body{
+    font-family: "Arial";
+    background: url("nature.jpg");
+}
+
+div#login_form{
+    margin-top: 15px;
+    
+}
+span{
+    font-weight: 700;
+}
+div#form{
+    background-color: #ffb3b3;
+    padding: 15px;
+    width: 200px;
+    margin: 100px auto;
+    text-align:center;
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+}
+
+img {
+    padding-left:15px;
+    max-size: 5px;
+}
+
+#new{
+    margin-left:auto;
+    font-weight: 900;
+    text-decoration: none;
+}
+#login_button {
+    margin-right:127px;
+}
+#wrong{
+	background-color:yellow;
+}
