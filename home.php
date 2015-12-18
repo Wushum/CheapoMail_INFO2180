@@ -2,11 +2,11 @@
 session_start();
 $dbname = "cheapomail";
 $dbhost = "localhost";
-$dbuser = "C9_USER";
+$dbuser = "wushum";
 $dbpass = "Pass_word";
 $connection =  mysql_connect($dbhost,$dbuser,$dbpass);
 $id = $_SESSION["id"];
-$q = "SELECT * FROM message WHERE recipient_ids = '$id' ORDER BY id DESC LIMIT 15";
+$q = "SELECT * FROM message WHERE recipient_ids = '$id' ORDER BY id DESC LIMIT 5";
 $database = mysql_select_db($dbname,$connection);
 $rows = mysql_query($q);
 ?>

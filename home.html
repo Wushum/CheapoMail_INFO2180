@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Cheapomail</title>
+        <link rel="stylesheet" href="homepage.css" type="text/css" />
+        <script type="text/javascript" src="homepage.js"></script>
+    </head>
+    
+    <body>
+        
+        <form id = "form" name = "form">
+          <center><img src="mail.jpg"><br></center>
+        <div id = "menu">
+          <center>
+            
+            <button class="dobutton" id="Inbox" onclick="inbox()">Inbox</button><br><br>
+            <button class="dobutton" id="People">People</button><br><br>
+            <button onclick="compose_message()">Compose</button>
+          </center>
+        </div>
+        <div id = "logout"><button id="logout">Logout</button></div><br><br>
+        <div id="show" style="display:none">
+          
+          <form ng-show="adding" class="add-window" ng-submit="addItem()">
+            <div class='header'>Compose your message below</div>
+            <div class='inner'>
+              <div id = "to">
+                <label>Recipient: </label>
+                <input type = "text">
+              </div>
+              
+              <div id = "message">
+                <label>Message: </label>
+                <textarea rows="4" cols="10"></textarea>
+              </div>
+              
+                <input type="submit" value="Send">
+                <input type="reset" value="Cancel" onclick="interrupt_comp()">
+              
+            </div>
+          </form>
+       </div>
+        </body>
+</html>

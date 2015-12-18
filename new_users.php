@@ -1,7 +1,7 @@
 <?php
     $dbhost = "localhost";
-    $dbname = "cheapomail";
-    $dbuser = "C9_USER";
+    $dbname = "cheapomaill";
+    $dbuser = "$C9_USER";
     $dbpassword = "Pass_word";
     
 $firstName = $_POST["firstname"];

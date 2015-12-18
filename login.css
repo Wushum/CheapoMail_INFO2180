@@ -7,6 +7,10 @@ div#login_form{
     margin-top: 15px;
     
 }
+div#logout{
+    background-color: red;
+}
+
 span{
     font-weight: 700;
 }

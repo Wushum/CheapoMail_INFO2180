@@ -67,9 +67,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
-INSERT INTO `users` (`id`, `FirstName`, `LastName`, `Password`, `UserName`) VALUES
-(7, 'First', 'Last', 'Password', 'UserName');
+
+INSERT INTO users (firstname, lastname, password, username) VALUES ('Shomari','Dillon','Shomari876','Captain');
+INSERT INTO users (firstname, lastname, password, username) VALUES ('Dayreon','Mitchell','Dayreon868','DJ');
+INSERT INTO users (firstname, lastname, password, username) VALUES ('Dale','Gayle','Spaniard4','Spaniard');
+INSERT INTO users (firstname, lastname, password, username) VALUES ('Jerome','Gaal','Jroots14','Jerome');
+INSERT INTO users (firstname, lastname, password, username) VALUES ('Tevin','Phillips','TevVinc8','Vision');
+INSERT INTO users (firstname, lastname, password, username) VALUES ('Winston','Lindsay','Webdevelopment1','Administrator');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+SHOW TABLES;
+SELECT * FROM users;
+SELECT * FROM message_read;
+SELECT * FROM message;

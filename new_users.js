@@ -1,3 +1,17 @@
+window.onload = function () { 
+   var passwordField = $("password");
+   passwordField.onblur = validatePassword;
+};
+
+function validate(){
+   var passwordField = $("password");
+   passwordField.onblur = validatePassword;
+   var valid = passwordField.onblur();
+   if(valid){
+       alert("We have a New User");
+   }
+   return valid;
+}
 function validatePassword(){
     var errorMessage = $("passwordError");
     var password = this.value;
@@ -36,18 +50,4 @@ function validatePassword(){
     }
     return true;
     
-}
-window.onload = function () { 
-   var passwordField = $("password");
-   passwordField.onblur = validatePassword;
-};
-
-function validate(){
-   var passwordField = $("password");
-   passwordField.onblur = validatePassword;
-   var valid = passwordField.onblur();
-   if(valid){
-       alert("We have a New User");
-   }
-   return valid;
 }
